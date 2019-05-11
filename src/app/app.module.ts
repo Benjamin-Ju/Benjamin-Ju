@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NgbModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { FlatpickrModule } from 'angularx-flatpickr';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,27 +11,34 @@ import { AppComponent } from './app.component';
 import { AlertModule } from 'ngx-bootstrap';
 import { NotesComponent } from './notes/notes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { RouterModule } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotesComponent,
     DashboardComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     AlertModule.forRoot(),
-    RouterModule.forRoot([
-      { path: '', component: DashboardComponent },
-      { path: 'notes', component: NotesComponent },
-      { path: '**', component: NotFoundComponent },
-    ])
+    CommonModule,
+    FormsModule,
+    NgbModalModule,
+    FlatpickrModule.forRoot(),
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory
+    })
   ],
+  exports: [CalendarComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
