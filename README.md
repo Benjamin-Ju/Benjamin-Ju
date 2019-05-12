@@ -7,6 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - npm install 
 - npm install ngx-bootstrap bootstrap --save
 - npm install @ng-bootstrap/ng-bootstrap --save
+- npm install @types/node --save-dev
 - ng serve
 
 

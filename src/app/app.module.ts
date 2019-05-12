@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { NgbModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { FlatpickrModule } from 'angularx-flatpickr';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
@@ -13,8 +15,9 @@ import { NotesComponent } from './notes/notes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CalendarComponent } from './calendar/calendar.component';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+
+import { DemoUtilsModule } from '../demo-utils/module';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,8 @@ import { FormsModule } from '@angular/forms';
     CalendarModule.forRoot({
       provide: DateAdapter,
       useFactory: adapterFactory
-    })
+    }),
+    DemoUtilsModule
   ],
   exports: [CalendarComponent],
   providers: [],
