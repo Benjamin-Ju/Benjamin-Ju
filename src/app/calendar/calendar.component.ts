@@ -36,6 +36,8 @@ export class CalendarComponent implements OnInit {
 
   clickedDate: Date;
 
-  clickedColumn: number;
+  checkSchedule(clickedDate) {
+    return clickedDate
+  }
 
 }

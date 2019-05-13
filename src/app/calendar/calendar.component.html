@@ -3,13 +3,12 @@
   </mwl-demo-utils-calendar-header>
     
   <div class="alert alert-info">
-    Click on a day on the view.
-    <strong *ngIf="clickedDate"
-      >You clicked on this day: {{ clickedDate | date:'medium' }}</strong
-    >
-    <strong *ngIf="clickedColumn != null"
-      >You clicked on this column: {{ clickedColumn }}</strong
-    >
+    My schedule for 
+    <strong *ngIf="clickedDate">{{ clickedDate | date:'longDate' }}</strong>
+    <br>
+    <div>
+      {{ checkSchedule(clickedDate) }}
+    </div>
   </div>
     
   <div [ngSwitch]="view">
