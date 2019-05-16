@@ -4,7 +4,7 @@
     
   <div class="alert alert-info">
     My schedule for 
-    <strong *ngIf="clickedDate">{{ clickedDate | date:'longDate' }}</strong>
+    <strong *ngIf="clickedDate">{{ this.checkSchedule(clickedDate) }}</strong>
     <br> <br>
     <div *ngFor="let item of schedule">
       <div>
