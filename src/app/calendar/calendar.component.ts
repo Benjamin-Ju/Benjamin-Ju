@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { CalendarEvent } from 'angular-calendar';
+import { CalendarSchedulesService } from '../../services/calendar-schedules.service'
 
 const colors: any = {
   red: {
@@ -24,9 +25,10 @@ const colors: any = {
 export class CalendarComponent implements OnInit {
 
   ngOnInit() {
+    this.checkSchedule()
   }
 
-  constructor() { }
+  constructor(private calendarService: CalendarSchedulesService) { }
 
   view: string = 'month';
 
@@ -34,10 +36,14 @@ export class CalendarComponent implements OnInit {
 
   events: CalendarEvent[] = [];
 
-  clickedDate: Date;
+  clickedDate: string;
 
-  checkSchedule(clickedDate) {
-    return clickedDate
+  schedule: string[]
+
+  checkSchedule() {
+    this.clickedDate = "2019-01-04"
+    this.schedule = this.calendarService.getSchedule(this.clickedDate)
+    console.log(this.schedule)
   }
 
 }
