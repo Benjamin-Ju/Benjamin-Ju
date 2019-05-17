@@ -9,7 +9,7 @@ export class CalendarSchedulesService {
   constructor() { }
 
   schedules: { [id: string]:  string[] } = {
-    "2019-01-04": [
+    "04/01/2019": [
       "6:00am - 7:00am Chill",
       "7:00am - 8:30am Eat, Dishes, Shower, Meditation",
       "8:30am - 9:05am Transit to Work",

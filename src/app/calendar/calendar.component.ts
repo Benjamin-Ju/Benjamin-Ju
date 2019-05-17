@@ -40,9 +40,10 @@ export class CalendarComponent implements OnInit {
   schedule: string[]
 
   checkSchedule(clickedDate) {
-    if (clickedDate) {
-      console.log(this.clickedDate)
-      return "test"
+    let date = clickedDate.toLocaleString('en-US', { year:'numeric', month:'2-digit', day:'2-digit' }).substring(0,10)
+    if (date) {
+      console.log(date)
+      this.schedule =  this.calendarService.getSchedule(date)
     }
   }
 
