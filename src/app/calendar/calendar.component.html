@@ -1,18 +1,7 @@
 <div class="container" style="padding-top: 15px;">
   <mwl-demo-utils-calendar-header [(view)]="view" [(viewDate)]="viewDate">
   </mwl-demo-utils-calendar-header>
-    
-  <div class="container">
-    My schedule for {{ clickedDate }}
-    <br> <br>
-    <div *ngFor="let item of schedule">
-      <div>
-        {{ item }}
-      </div>
-    </div>
-    <br>
-  </div>
-    
+
   <div [ngSwitch]="view">
     <mwl-calendar-month-view
       *ngSwitchCase="'month'"
@@ -23,6 +12,25 @@
     </mwl-calendar-month-view>
 
   </div>
+  <br>
+  <div class="container">
+      My schedule for {{ clickedDate | date:'mediumDate' }}
+      <br> <br>
+      <div *ngFor="let item of schedule">
+        <div>
+          {{ item }}
+        </div>
+      </div>
+      <br>
+      My expenses for {{ clickedDate | date:'mediumDate' }}
+      <br> <br>
+      <div *ngFor="let item of expenses">
+          <div>
+            {{ item }}
+          </div>
+        </div>
+      <br>
+    </div>
 </div>
   
   
