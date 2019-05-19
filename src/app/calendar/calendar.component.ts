@@ -25,6 +25,7 @@ const colors: any = {
 export class CalendarComponent implements OnInit { 
 
   ngOnInit() {
+    this.checkSchedule(new Date())
   }
 
   constructor(private calendarService: CalendarSchedulesService) { }
@@ -40,10 +41,13 @@ export class CalendarComponent implements OnInit {
   schedule: string[]
 
   checkSchedule(clickedDate) {
+    this.clickedDate = clickedDate
     let date = clickedDate.toLocaleString('en-US', { year:'numeric', month:'2-digit', day:'2-digit' }).substring(0,10)
     if (date) {
       console.log(date)
       this.schedule =  this.calendarService.getSchedule(date)
+    } else {
+      this.schedule = ["No Date Selected"]
     }
   }
 

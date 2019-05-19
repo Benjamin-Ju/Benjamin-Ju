@@ -27,7 +27,11 @@ export class CalendarSchedulesService {
   };
 
   getSchedule(date) {
-    return this.schedules[date]
+    if (this.schedules[date]) {
+      return this.schedules[date]
+    } else {
+      return ["No schedule available"]
+    }
   }
 
 }
