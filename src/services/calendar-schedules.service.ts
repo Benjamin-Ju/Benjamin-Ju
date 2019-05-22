@@ -167,6 +167,25 @@ export class CalendarSchedulesService {
       "08:15pm - 08:45pm Shower",
       "08:45pm - 08:50pm Brush Teeth",
     ],
+    // HERE
+    "04/10/2019": [
+      "05:15am - 06:00am Eat, Dishes",
+      "06:00am - 06:20am Transit",
+      "06:20am - 08:00am Gym",
+      "08:00am - 08:30am Shower",
+      "08:30am - 08:50am Transit",
+      "08:50am - 05:00pm Work",
+      "05:00pm - 05:35pm Transit",
+      "05:35pm - 05:45pm Chill",
+      "05:45pm - 05:50pm Dishes",
+      "05:50pm - 06:00pm Chill",
+      "06:00pm - 06:20pm Shower",
+      "06:20pm - 06:30pm Work Report Submission",
+      "06:30pm - 07:30pm Taxes",
+      "07:30pm - 08:10pm Tetris",
+      "08:10pm - 08:25pm Teeth Stuff",
+      "08:25pm - 09:00pm Chill",
+    ],
   };
 
   getSchedule(date) {
