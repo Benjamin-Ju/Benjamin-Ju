@@ -167,7 +167,6 @@ export class CalendarSchedulesService {
       "08:15pm - 08:45pm Shower",
       "08:45pm - 08:50pm Brush Teeth",
     ],
-    // HERE
     "04/10/2019": [
       "05:15am - 06:00am Eat, Dishes",
       "06:00am - 06:20am Transit",
@@ -185,6 +184,32 @@ export class CalendarSchedulesService {
       "07:30pm - 08:10pm Tetris",
       "08:10pm - 08:25pm Teeth Stuff",
       "08:25pm - 09:00pm Chill",
+    ],
+    "04/11/2019": [
+      "04:15am - 06:00am Cooking, Eat, Dishes",
+      "06:00am - 06:30am Transit",
+      "06:30am - 08:00am Gym",
+      "08:00am - 08:30am Shower",
+      "08:30am - 08:50am Transit",
+      "08:50am - 05:00pm Work",
+      "05:00pm - 06:05pm Transit, Shopping",
+      "06:05pm - 07:00pm Chill",
+      "07:00pm - 07:30pm Organization",
+      "07:30pm - 08:00pm Shower",
+      "08:00pm - 08:30pm Chill",
+    ],
+    "04/12/2019": [
+      "05:30am - 06:00am Eat, Dishes",
+      "06:00am - 06:30am Transit",
+      "06:20am - 07:50am Gym",
+      "07:50am - 08:30am Shower",
+      "08:30am - 08:50am Transit",
+      "08:50am - 05:00pm Work",
+      "05:00pm - 05:55pm Transit, Groceries",
+      "05:55pm - 06:45pm Chill",
+      "06:45pm - 07:10pm Shower",
+      "07:10pm - 07:40pm Tetris",
+      "07:40pm - 08:15pm Mentor Piece",
     ],
   };
 
