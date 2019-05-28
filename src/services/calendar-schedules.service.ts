@@ -514,7 +514,6 @@ export class CalendarSchedulesService {
       "09:00am - 10:00am Working on Roles, Mission Statement",
       "WASTE DAY TIL 10"
     ],
-    // BELOW HAVENT BEEN RECORDED
     "05/06/2019": [
       "06:15am - 06:30am Chill",
       "06:30am - 06:45am Meditation",
@@ -642,7 +641,6 @@ export class CalendarSchedulesService {
       "10:50pm - 11:30pm Chill",
       "11:30pm - 01:00am Cook, Eat, Dishes",
     ],
-    // Below haven't been recorded
     "05/15/2019": [
       "07:30am - 08:00am Chill",
       "08:00am - 08:20am Shower",
