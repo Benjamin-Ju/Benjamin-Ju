@@ -18,6 +18,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 
 import { DemoUtilsModule } from '../demo-utils/module';
 
+declare var require: any;
 
 @NgModule({
   declarations: [
