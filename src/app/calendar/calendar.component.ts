@@ -47,7 +47,6 @@ export class CalendarComponent implements OnInit {
     this.clickedDate = clickedDate
     let date = clickedDate.toLocaleString('en-US', { year:'numeric', month:'2-digit', day:'2-digit' }).substring(0,10)
     if (date) {
-      console.log(date)
       this.schedule = this.calendarService.getSchedule(date)
       this.expenses = this.expenseService.getExpenses(date)
     } else {
