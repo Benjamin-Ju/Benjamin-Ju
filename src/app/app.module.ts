@@ -17,6 +17,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { CalendarComponent } from './calendar/calendar.component';
 
 import { DemoUtilsModule } from '../demo-utils/module';
+import { ProjectsComponent } from './projects/projects.component';
+import { BlogComponent } from './blog/blog.component';
 
 declare var require: any;
 
@@ -26,7 +28,9 @@ declare var require: any;
     NotesComponent,
     DashboardComponent,
     NotFoundComponent,
-    CalendarComponent
+    CalendarComponent,
+    ProjectsComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
