@@ -1,3 +1,5 @@
+declare var require: any;
+
 export const sources = [
     {
       filename: 'calendar-header.component.ts',

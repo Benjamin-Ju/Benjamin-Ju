@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { AlertModule } from 'ngx-bootstrap';
+
 import { NotesComponent } from './notes/notes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -45,7 +46,7 @@ declare var require: any;
       provide: DateAdapter,
       useFactory: adapterFactory
     }),
-    DemoUtilsModule
+    DemoUtilsModule,
   ],
   exports: [CalendarComponent],
   providers: [],
