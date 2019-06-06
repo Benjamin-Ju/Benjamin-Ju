@@ -1,11 +1,27 @@
-<div class="container" style="padding-top: 15px;">
-  <h4 class="mb-3 font-weight-light">
+<div class="container" style="padding-top: 15px; background-color: white">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Library</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem (click)="show('book')">
+          <h4 class="mb-3 font-weight-light">
+            <span class="inner-icon-block">
+              Book Notes
+            </span>
+            <img src="assets\book.png" alt="Picture of a Book" width="20px" height="20px">
+          </h4>
+        </button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h4 class="mb-3 font-weight-light" *ngIf="selected=='book'">
     <span class="inner-icon-block" padding=5px>
       Book Notes
     </span>
     <img src="assets\book.png" alt="Picture of a Book" width="20px" height="20px">
   </h4>
-  <ngb-tabset>
+  <ngb-tabset *ngIf="selected=='book'">
     <ngb-tab title="Outliers">
       <ng-template ngbTabContent>
         <br>
