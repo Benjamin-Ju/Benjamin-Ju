@@ -15,6 +15,17 @@
     </div>
   </div>
   <br>
+  <h4 class="mb-3 font-weight-light" *ngIf="selected=='intro'">
+    <span class="inner-icon-block" padding=5px>
+      Welcome to my notes library
+    </span>
+  </h4>
+  <div class="container" *ngIf="selected=='intro'">
+    This is a collection of my notes from various sources including books, coding, etc.
+    <br>
+    I hope you find them useful :)
+  </div>
+  <div></div>
   <h4 class="mb-3 font-weight-light" *ngIf="selected=='book'">
     <span class="inner-icon-block" padding=5px>
       Book Notes
