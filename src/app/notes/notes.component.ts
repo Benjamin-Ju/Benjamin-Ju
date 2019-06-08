@@ -26,7 +26,7 @@ export class NotesComponent implements OnInit {
   }
 
   show(input: string) {
-    this.selected = 'book'
+    this.selected = input
     this.header = this.headers[this.selected]
   }
 
