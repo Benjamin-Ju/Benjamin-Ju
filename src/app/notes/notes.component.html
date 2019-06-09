@@ -593,78 +593,78 @@
     </ul>
     <h4>Docker Container Commands</h4>
     <div>
-      <b><i>Side Note: To get a list of commands and/or modifications to commands, enter `(command) --help`</i></b>
+      <b><i>Side Note: To get a list of commands and/or modifications to commands, enter <code>(command) --help</code></i></b>
       <br>
-      Example: `docker container --help`, `docker container start --help`, `docker image --help`, etc
+      Example: <code>docker container --help</code>, <code>docker container start --help</code>, <code>docker image --help</code>, etc
     </div>
     <div>
-      <b>Docker Container Run</b>
+      <b><code>Docker Container Run</code></b>
       <div>
         This is the most basic and important Docker Container commands. It can be executed in many ways depending on what is added to the command. 
         <ul>
           <li>
-            docker container run (name of image): runs a container based on the image.
-            <ul><li>Side Note: docker container run must be at the beginning of the command. The image specification must be at the end of the command. Any additional modifications are added in the middle of the command </li></ul>
+            <code>docker container run (name of image)</code> : runs a container based on the image.
+            <ul><li>Side Note: <code>docker container run</code> must be at the beginning of the command. The image specification must be at the end of the command. Any additional modifications are added in the middle of the command </li></ul>
           </li>
         </ul>
         <b>Modifications</b>
         <div><i>REMINDER</i>: Modifications must be added between 'docker container run' and the name of the image</div>
       </div>
       <ul>
-        <li>-it: starts a container interactively</li>
-        <li>-d: runs a container in the background (d stands for daemon)</li>
-        <li>--name: names the created container</li>
-        <li>-p HOST POST:CONTAINER PORT: publishes the container where the CONTAINER PORT is the port at which the container listens and the HOST PORT is the port where a user can access the container</li>
-        <li>-e: sets environment variables </li>
-        <li>-v: bind mounts a volume</li>
+        <li><code>-it</code>: starts a container interactively</li>
+        <li><code>-d</code>: runs a container in the background (d stands for daemon)</li>
+        <li><code>--name</code>: names the created container</li>
+        <li><code>-p HOST POST:CONTAINER PORT</code>: publishes the container where the CONTAINER PORT is the port at which the container listens and the HOST PORT is the port where a user can access the container</li>
+        <li><code>-e</code>: sets environment variables </li>
+        <li><code>-v</code>: bind mounts a volume</li>
       </ul>
     </div>
     <div>
       <h4>Other Docker Container Commands</h4>
       <div><i>Side Note: Some commands have additional modifications. To get an extensive list, you can always add --help to the end of any command</i></div>   
       <ul>
-        <li>docker container start (id of container): starts a stopped container</li>
+        <li><code>docker container start (id of container)</code>: starts a stopped container</li>
         <ul><li>Side Note: You do not need to put in the full id of the container. You only need to put in the first 3 characters or more, simply making sure the ID is unique</li></ul>
-        <li>docker container stop (id of container): stops the container from running</li>
-        <li>docker container rm (list of container id's): removes all stopped containers within the list of container id's, running containers will not be removed and you will be informed that they could not be removed</li>
+        <li><code>docker container stop (id of container)</code>: stops the container from running</li>
+        <li><code>docker container rm (list of container id's)</code>: removes all stopped containers within the list of container id's, running containers will not be removed and you will be informed that they could not be removed</li>
         <ul>
           <li>Side Note: adding '-f', force, after rm, will remove stopped and running containers, removing all the containers within the list </li>
-          <li>Side Note: docker rm $(docker ps -a -q) removes all stopped containers </li>
-          <li>Side Note: Similarly, docker rm -f $(docker ps -a -q) removes all containers </li>
+          <li>Side Note: <code>docker rm $(docker ps -a -q)</code> removes all stopped containers </li>
+          <li>Side Note: Similarly, <code>docker rm -f $(docker ps -a -q)</code> removes all containers </li>
         </ul>
-        <li>`docker container ls`: lists all running/active containers </li>
-        <ul><li>Side Note: `docker ps` also achieves the same result</li></ul>
-        <li>`docker container ls -a`: list all containers (including stopped containers)</li>
-        <ul><li>Side Note: `docker ps -a` also achieves the same result</li></ul>
-        <li>`docker container logs (name of container)`: shows logs for a specific container </li>
-        <li>`docker container top (name of container)`: shows processes for the container (includes both master and worker processes)</li>
-        <li>`docker container inspect (name of container)`: shows the metadata about the container (start-up config, volumes, networks, etc)</li>
-        <ul><li>Side Note: adding '*--format*' after 'inspect' formats the output of commands using "Go templates"</li></ul>
-        <li>`docker container stats (name of container)`: repeatedly displays the performance stats of all running containers on regular intervals </li>
+        <li><code>docker container ls</code>: lists all running/active containers </li>
+        <ul><li>Side Note: <code>docker ps</code> also achieves the same result</li></ul>
+        <li><code>docker container ls -a</code>: list all containers (including stopped containers)</li>
+        <ul><li>Side Note: <code>docker ps -a</code> also achieves the same result</li></ul>
+        <li><code>docker container logs (name of container)</code>: shows logs for a specific container </li>
+        <li><code>docker container top (name of container)</code>: shows processes for the container (includes both master and worker processes)</li>
+        <li><code>docker container inspect (name of container)</code>: shows the metadata about the container (start-up config, volumes, networks, etc)</li>
+        <ul><li>Side Note: adding '<i>--format*</i>' after 'inspect' formats the output of commands using "Go templates"</li></ul>
+        <li><code>docker container stats (name of container)</code>: repeatedly displays the performance stats of all running containers on regular intervals </li>
       </ul>   
     </div>
     <div>
       <h4>Docker Network Commands</h4>
       <ul>
-        <li>`docker network inspect (name of network)`: gives detailed information about the network</li>
-        <li>`docker network create (name of network)`: creates a new network</li>
-        <li>`docker network connect (network id) (container id)`: connects a container to a network</li>
-        <li>`docker network disconnect (network id) (container id)`: disconnects a container from a network</li>
+        <li><code>docker network inspect (name of network)</code>: gives detailed information about the network</li>
+        <li><code>docker network create (name of network)</code>: creates a new network</li>
+        <li><code>docker network connect (network id) (container id)</code>: connects a container to a network</li>
+        <li><code>docker network disconnect (network id) (container id)</code>: disconnects a container from a network</li>
       </ul>
     </div>
     <div>
       <h4>Docker Image Commands</h4>
       <ul>
-        <li>`docker image history (name)`: shows layers of changes made in image</li>
-        <li>`docker image inspect (name)`: returns JSON metadata about the image</li>
-        <li>`docker image tag (image name) (tag)`: places a tag onto the image</li>
+        <li><code>docker image history (name):</code> shows layers of changes made in image</li>
+        <li><code>docker image inspect (name)</code>: returns JSON metadata about the image</li>
+        <li><code>docker image tag (image name) (tag)</code>: places a tag onto the image</li>
         <ul>
-          <li>`docker image tag (REPOSITORY) (NEWREPOSITORY)`: makes a new image with a different repository (NEWREPOSITORY), same image id, same tag</li>
-          <li>`docker image tag (REPOSITORY) (REPOSITORY:TAG)`: makes a new image with the same repository, same image id, and different tag (TAG)</li>
+          <li><code>docker image tag (REPOSITORY) (NEWREPOSITORY)</code>: makes a new image with a different repository (NEWREPOSITORY), same image id, same tag</li>
+          <li><code>docker image tag (REPOSITORY) (REPOSITORY:TAG)</code>: makes a new image with the same repository, same image id, and different tag (TAG)</li>
         </ul>
-        <li>`docker image push (name of image)`: pushes image to repository, default is Docker Hub (must log in first)</li>
-        <li>`docker image tag (name of image) (name of image):(tag)`: adds a tag to an image</li>
-        <li>`docker image build -t (tag) (directory)`</li>
+        <li><code>docker image push (name of image)</code>: pushes image to repository, default is Docker Hub (must log in first)</li>
+        <li><code>docker image tag (name of image) (name of image):(tag)</code>: adds a tag to an image</li>
+        <li><code>docker image build -t (tag) (directory)</code></li>
         <ul>
           <li>-t is for tagging and naming </li>
           <li>if DockerFile is in current directory, use ".". Otherwise, insert the file path of the DockerFile</li>
