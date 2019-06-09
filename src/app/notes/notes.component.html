@@ -48,7 +48,7 @@
     </span>
     <img src="assets\book.png" alt="Picture of a Book" width="30px" height="30px">
   </h2>
-  <ngb-tabset *ngIf="selected=='book'">
+  <ngb-tabset class="container" *ngIf="selected=='book'">
     <ngb-tab title="Outliers">
       <ng-template ngbTabContent>
         <br>
@@ -582,7 +582,7 @@
       </span>
       <img src="assets\docker.png" alt="Picture of a Docker" width="30px" height="30px">
   </h2>
-  <div *ngIf="selected=='docker'">
+  <div class="container" *ngIf="selected=='docker'">
     <a href="https://docs.docker.com/engine/reference/commandline/docker/">Extensive List of Docker Commands</a>
     <br><br>
     <h5>Basic Information</h5>
@@ -679,5 +679,68 @@
         Right-click the Docker icon on the bottom right menu and the 'Switch to Linux Containers' will be available
       </div>
     </div>
+  </div>
+  <h2 class="mb-3 font-weight-light" *ngIf="selected=='markdown'">
+    <span class="inner-icon-block" padding=5px> 
+      MarkDown Notes
+    </span>
+    <img src="assets\markdown.png" alt="Picture of MarkDown" width="30px" height="30px">
+  </h2>
+  <div class="container" *ngIf="selected=='markdown'">
+    <h6><b>UNFINISHED</b></h6>
+    <h5>Headers</h5>
+    <div>
+      6 different types of Headers, gets smaller the more hashes, the first two headers have underlines 
+    </div>
+    <ul>
+      <li># H1</li>
+      <li>Can also be written as: </li>
+      <li>
+        <div>
+          H1 <br>
+          ====== (must be written under header text)
+        </div>
+      </li>
+      <li>## H2</li>
+      <li>Can also be written as: </li>
+      <li>
+        <div>
+          H2 <br>
+          ------ (must be written under header text)
+        </div>
+      </li>
+      <li>### H3</li>
+      <li>#### H4</li>
+      <li>##### H5</li>
+      <li>###### H6</li>
+    </ul>
+    <h5>Emphasis</h5>
+    <ul>
+      <li>Italics, can be written in two ways, with asterisks or underscores </li>
+      <ul>
+        <li>*asterisks*</li>
+        <li>_underscores_</li>
+      </ul>
+      <li>Bold, can be written in two ways, with asterisks or underscores</li>
+      <ul>
+        <li>**asterisks**</li>
+        <li>__underscores__</li>
+      </ul>
+      <li><b>Side note: to keep the underscore or asterisk character, \_ or \* is necessary</b></li>
+      <li>Combined emphasis, can be written in two ways, with asterisks or underscores, can be layered, for readability, use different symbols for each layer </li>
+      <ul><li>**asterisks and _underscores_**</li></ul>
+      <li>strikethrough uses two tildes ~</li>
+      <ul><li>~~scratch this~~</li></ul>
+      <li>Box (certain characters such as hashes and backticks are printed normally)</li>
+      <ul><li>`renders` or add four spaces</li></ul>
+      <li>Quotes</li>
+      <ul><li>> Quotes</li></ul>
+    </ul>
+    <h5>Lists</h5>
+    <h5>Links</h5>
+    <h5>Images</h5>
+    <h5>Tables</h5>
+    <h5>Blockquotes</h5>
+    <h5>Horizontal Rule</h5>
   </div>
 </div>

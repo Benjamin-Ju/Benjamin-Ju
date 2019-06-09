@@ -68,6 +68,28 @@ export class ExpensesService {
     "05/31/2019": [
       "$34.94 - Groceries",
     ],
+    "06/03/2019": [
+      "$28.07 - Groceries",
+      "$10.00 - Lazeez",
+    ],
+    "06/05/2019": [
+      "$7.83 - Groceries",
+      "$5.64 - DQ",
+    ],
+    "06/06/2019": [
+      "$9.93 - iPotato",
+      "$7.00 - Lunch",
+    ],
+    "06/07/2019": [
+      "$30.60 - Groceries",
+      "$3.77 - Tim Hortons",
+    ],
+    "06/08/2019": [  
+      "$89.25 - Driving Test",
+    ],
+    "06/09/2019": [  
+      "$9.93 - iPotato",
+    ],
   };
 
   getExpenses(date) {
