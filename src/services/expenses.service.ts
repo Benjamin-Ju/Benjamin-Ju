@@ -89,6 +89,8 @@ export class ExpensesService {
     ],
     "06/09/2019": [  
       "$9.93 - iPotato",
+      "$8.01 - Groceries",
+      "$4.96 - Tim Hortons",
     ],
   };
 
