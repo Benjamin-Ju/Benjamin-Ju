@@ -92,6 +92,19 @@ export class ExpensesService {
       "$8.01 - Groceries",
       "$4.96 - Tim Hortons",
     ],
+    "06/10/2019": [  
+      "$21.24 - Groceries",
+    ],
+    "06/12/2019": [  
+      "$16.10 - Groceries",
+      "$29.37 - Gym Membership",
+    ],
+    "06/15/2019": [  
+      "$24.35 - Groceries",
+    ],
+    "06/16/2019": [  
+      "$45 - Contacts Solution",
+    ],
   };
 
   getExpenses(date) {
