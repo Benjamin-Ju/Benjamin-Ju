@@ -20,6 +20,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { DemoUtilsModule } from '../demo-utils/module';
 import { ProjectsComponent } from './projects/projects.component';
 import { BlogComponent } from './blog/blog.component';
+import { StockHistoryComponent } from './stock-history/stock-history.component';
 
 declare var require: any;
 
@@ -31,7 +32,8 @@ declare var require: any;
     NotFoundComponent,
     CalendarComponent,
     ProjectsComponent,
-    BlogComponent
+    BlogComponent,
+    StockHistoryComponent
   ],
   imports: [
     BrowserModule,

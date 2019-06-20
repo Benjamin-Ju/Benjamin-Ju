@@ -6,6 +6,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BlogComponent } from './blog/blog.component';
+import { StockHistoryComponent } from './stock-history/stock-history.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'notes', component: NotesComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'stockhistory', component: StockHistoryComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
