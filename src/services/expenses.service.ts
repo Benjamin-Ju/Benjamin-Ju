@@ -117,6 +117,15 @@ export class ExpensesService {
     "06/23/2019": [  
       "$20.40 - Groceries",
     ],
+    "06/24/2019": [  
+      "$30.73 - Groceries",
+    ],
+    "06/26/2019": [  
+      "$16.82 - Groceries",
+    ],
+    "06/28/2019": [  
+      "$37.24 - Groceries",
+    ],
   };
 
   getExpenses(date) {
