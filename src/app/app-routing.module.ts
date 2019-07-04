@@ -7,6 +7,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BlogComponent } from './blog/blog.component';
 import { StockHistoryComponent } from './stock-history/stock-history.component';
+import { SchedulesComponent } from './schedules/schedules.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'stockhistory', component: StockHistoryComponent },
+  { path: 'schedules', component: SchedulesComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

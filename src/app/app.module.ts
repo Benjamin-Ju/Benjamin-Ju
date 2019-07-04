@@ -21,6 +21,8 @@ import { DemoUtilsModule } from '../demo-utils/module';
 import { ProjectsComponent } from './projects/projects.component';
 import { BlogComponent } from './blog/blog.component';
 import { StockHistoryComponent } from './stock-history/stock-history.component';
+import { SchedulesComponent } from './schedules/schedules.component';
+import { CodingChallengesComponent } from './coding-challenges/coding-challenges.component';
 
 declare var require: any;
 
@@ -33,7 +35,9 @@ declare var require: any;
     CalendarComponent,
     ProjectsComponent,
     BlogComponent,
-    StockHistoryComponent
+    StockHistoryComponent,
+    SchedulesComponent,
+    CodingChallengesComponent
   ],
   imports: [
     BrowserModule,
