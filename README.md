@@ -11,6 +11,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - npm install --save jquery
 - npm install --save popper.js
 - npm install --save bootstrap@4.0.0-beta
+
+- npm install --save wowjs
+- npm install --save ngx-wow
 - ng serve
 
 

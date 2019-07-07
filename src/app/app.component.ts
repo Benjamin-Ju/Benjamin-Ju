@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { Router, NavigationEnd, RouterEvent } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
+import { filter } from 'rxjs/operators';
+import { NgwWowService} from 'ngx-wow';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +11,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Benjamin-Ju';
+  constructor(private router: Router, @Inject(PLATFORM_ID) private platformId: Object, private wowService: NgwWowService) {
+
+    this.router.events.pipe(
+      filter((event:RouterEvent) => event instanceof NavigationEnd)
+    ).subscribe(event => {
+      if (isPlatformBrowser(this.platformId)) {
+        window.scroll(0, 0);
+        this.wowService.init(); // Load WoW animations when done navigating to page
+      }
+    });
+  }
 }

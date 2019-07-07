@@ -10,7 +10,7 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { AlertModule } from 'ngx-bootstrap';
+import { NgwWowModule } from 'ngx-wow';
 
 import { NotesComponent } from './notes/notes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -43,7 +43,6 @@ declare var require: any;
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    AlertModule.forRoot(),
     CommonModule,
     FormsModule,
     NgbModalModule,
@@ -53,6 +52,7 @@ declare var require: any;
       useFactory: adapterFactory
     }),
     DemoUtilsModule,
+    NgwWowModule,
   ],
   exports: [CalendarComponent],
   providers: [],
