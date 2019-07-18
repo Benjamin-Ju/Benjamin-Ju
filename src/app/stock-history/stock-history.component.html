@@ -3,7 +3,7 @@
   <div class="service-box container mb-3">
     <div class="row">
       <div class="col-md-1 d-none d-md-block header"><b>Date</b></div>
-      <div class="col-md-2 d-none d-md-block header"><b>Ticker Symbol</b></div>
+      <div class="col-md-1 d-none d-md-block header"><b>Ticker</b></div>
       <div class="col-md-1 d-none d-md-block header"><b>Buy/Sell</b></div>
       <div class="col-md-1 d-none d-md-block header"><b>Quantity</b></div>
       <div class="col-md-1 d-none d-md-block header"><b>Price</b></div>
@@ -14,8 +14,8 @@
   <div class="row" *ngFor="let trade of trades">
     <div class="d-xs-block d-md-none col-4 block-header">Date</div>
     <div class="col-md-1 col-8 block">{{ trade.date }}</div>
-    <div class="d-xs-block d-md-none col-4 block-header">Ticker Symbol</div>
-    <div class="col-md-2 col-8 block">{{ trade.symbol }}</div>
+    <div class="d-xs-block d-md-none col-4 block-header">Ticker</div>
+    <div class="col-md-1 col-8 block">{{ trade.symbol }}</div>
     <div class="d-xs-block d-md-none col-4 block-header">Buy/Sell</div>
     <div class="col-md-1 col-8 block">{{ trade.position }}</div>
     <div class="d-xs-block d-md-none col-4 block-header">Quantity</div>

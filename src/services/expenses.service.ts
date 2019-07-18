@@ -97,7 +97,7 @@ export class ExpensesService {
     ],
     "06/12/2019": [  
       "$16.10 - Groceries",
-      "$29.37 - Gym Membership",
+      "$29.37 - Gym",
     ],
     "06/15/2019": [  
       "$24.35 - Groceries",
@@ -122,6 +122,7 @@ export class ExpensesService {
     ],
     "06/26/2019": [  
       "$16.82 - Groceries",
+      "$29.37 - Gym"
     ],
     "06/28/2019": [  
       "$37.24 - Groceries",
@@ -131,10 +132,20 @@ export class ExpensesService {
     ],
     "07/03/2019": [  
       "$41.21 - Groceries",
-      "$5.64 - Groceries",
+      "$5.64 - Milkshake",
     ],
     "07/05/2019": [  
       "$20.67 - Groceries",
+    ],
+    "07/08/2019": [  
+      "$21.02 - Groceries",
+    ],
+    "07/10/2019": [  
+      "$27.45 - Groceries",
+      "$29.37 - Gym",
+    ],
+    "07/12/2019": [  
+      "$10.77 - Groceries",
     ],
   };
 

@@ -1,2 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/angular-calendar/css/angular-calendar.css";
+
+.header {
+    padding: 10px;
+    border-right: 1px dotted lightgrey;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: grey;
+}
+
+.block-header {
+    padding: 5px;
+    background-color: lightgrey;
+    box-shadow: 0.5px -0.5px 0 0px gray;
+    overflow-wrap: break-word;
+}
+
+.block {
+    padding: 8px;
+    box-shadow: 0px -0.5px 0 0px gray;
+    overflow-wrap: break-word;
+    font-size: 11px;
+    padding-left: 10px;
+    text-align: center
+}
