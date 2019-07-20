@@ -8,16 +8,18 @@ import { ProjectsComponent } from './projects/projects.component';
 import { BlogComponent } from './blog/blog.component';
 import { StockHistoryComponent } from './stock-history/stock-history.component';
 import { SchedulesComponent } from './schedules/schedules.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'calendar', component: CalendarComponent },
-  { path: 'notes', component: NotesComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'stockhistory', component: StockHistoryComponent },
-  { path: 'schedules', component: SchedulesComponent },
+  { path: '', component: PortfolioComponent },
+  { path: 'portfolio', component: PortfolioComponent },
+  { path: 'personal', component: DashboardComponent },
+  { path: 'personal/calendar', component: CalendarComponent },
+  { path: 'personal/notes', component: NotesComponent },
+  { path: 'personal/projects', component: ProjectsComponent },
+  { path: 'personal/blog', component: BlogComponent },
+  { path: 'personal/stockhistory', component: StockHistoryComponent },
+  { path: 'personal/schedules', component: SchedulesComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

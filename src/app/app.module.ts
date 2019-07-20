@@ -23,6 +23,8 @@ import { BlogComponent } from './blog/blog.component';
 import { StockHistoryComponent } from './stock-history/stock-history.component';
 import { SchedulesComponent } from './schedules/schedules.component';
 import { CodingChallengesComponent } from './coding-challenges/coding-challenges.component';
+import { PersonalComponent } from './personal/personal.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 declare var require: any;
 
@@ -37,7 +39,9 @@ declare var require: any;
     BlogComponent,
     StockHistoryComponent,
     SchedulesComponent,
-    CodingChallengesComponent
+    CodingChallengesComponent,
+    PersonalComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

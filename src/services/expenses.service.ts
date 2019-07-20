@@ -147,6 +147,18 @@ export class ExpensesService {
     "07/12/2019": [  
       "$10.77 - Groceries",
     ],
+    "07/14/2019": [  
+      "$11.24 - iPotato",
+    ],
+    "07/15/2019": [  
+      "$15.12 - Groceries",
+    ],
+    "07/17/2019": [  
+      "$35.96 - Groceries",
+    ],
+    "07/18/2019": [  
+      "$8.75 - Lunch",
+    ],
   };
 
   getExpenses(date) {
