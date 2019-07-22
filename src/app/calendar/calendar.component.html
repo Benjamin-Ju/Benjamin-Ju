@@ -1,37 +1,30 @@
 <app-personal></app-personal>
-<div class="container" style="padding-top: 15px;">
-  <mwl-demo-utils-calendar-header [(view)]="view" [(viewDate)]="viewDate">
-  </mwl-demo-utils-calendar-header>
-
-  <div [ngSwitch]="view">
-    <mwl-calendar-month-view
-      *ngSwitchCase="'month'"
-      [viewDate]="viewDate"
-      [events]="events"
-      (dayClicked)="checkSchedule($event.day.date)"
-    >
-    </mwl-calendar-month-view>
-
-  </div>
-  <br>
-  <div class="container">
-      My schedule for {{ clickedDate | date:'mediumDate' }}
-      <br> <br>
-      <div *ngFor="let item of schedule">
-        <div>
-          {{ item }}
-        </div>
-      </div>
-      <br>
-      My expenses for {{ clickedDate | date:'mediumDate' }}
-      <br> <br>
-      <div *ngFor="let item of expenses">
+<div class="container" style="padding-top: 15px">
+  <div class="row">
+    <div class="column" style="padding-right: 15px">
+      <ngb-datepicker (select)="checkSchedule($event)" [(ngModel)]="model"></ngb-datepicker>
+    </div>
+    <div class="column">
+      <div class="container">
+        My schedule for {{ displayDate | date:'mediumDate'}}
+        <br> <br>
+        <div *ngFor="let item of schedule">
           <div>
             {{ item }}
           </div>
         </div>
-      <br>
+        <br>
+        My expenses for {{ displayDate | date:'mediumDate'}}
+        <br> <br>
+        <div *ngFor="let item of expenses">
+            <div>
+              {{ item }}
+            </div>
+          </div>
+        <br>
+      </div>
     </div>
+  </div>
 </div>
   
   

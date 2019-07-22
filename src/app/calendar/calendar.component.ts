@@ -2,6 +2,8 @@ import { Component, ChangeDetectionStrategy, OnInit} from '@angular/core';
 import { CalendarEvent } from 'angular-calendar';
 import { CalendarSchedulesService } from '../../services/calendar-schedules.service'
 import { ExpensesService } from 'src/services/expenses.service';
+import { NgbDateParserFormatter, NgbCalendar, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+
 
 const colors: any = {
   red: {
@@ -26,10 +28,13 @@ const colors: any = {
 export class CalendarComponent implements OnInit { 
 
   ngOnInit() {
-    this.checkSchedule(new Date())
+    this.model = this.calendar.getToday();
+    this.checkSchedule(this.model)
   }
 
-  constructor(private calendarService: CalendarSchedulesService, private expenseService: ExpensesService) { }
+  model: NgbDateStruct;
+
+  constructor(private calendarService: CalendarSchedulesService, private expenseService: ExpensesService, private ngbDateParserFormatter: NgbDateParserFormatter, private calendar: NgbCalendar) { }
 
   view: string = 'month';
 
@@ -37,15 +42,15 @@ export class CalendarComponent implements OnInit {
 
   events: CalendarEvent[] = [];
 
-  clickedDate: string;
+  displayDate: string;
 
   schedule: string[]
 
   expenses: string[]
 
   checkSchedule(clickedDate) {
-    this.clickedDate = clickedDate
-    let date = clickedDate.toLocaleString('en-US', { year:'numeric', month:'2-digit', day:'2-digit' }).substring(0,10)
+    this.displayDate = this.ngbDateParserFormatter.format(clickedDate)
+    let date = this.displayDate.substring(5,7)+"/"+this.displayDate.substring(8)+"/"+this.displayDate.substring(0,4)
     if (date) {
       this.schedule = this.calendarService.getSchedule(date)
       this.expenses = this.expenseService.getExpenses(date)
