@@ -27,6 +27,7 @@
     "date-fns": "^1.30.1",
     "flatpickr": "^4.5.7",
     "jquery": "^3.4.1",
+    "ng2-page-scroll": "^4.0.0-beta.12",
     "ngx-bootstrap": "^4.1.1",
     "ngx-wow": "^2.0.1",
     "popper.js": "^1.15.0",

@@ -6,6 +6,7 @@ import { NgbModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { FlatpickrModule } from 'angularx-flatpickr';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -57,6 +58,7 @@ declare var require: any;
     }),
     DemoUtilsModule,
     NgwWowModule,
+    Ng2PageScrollModule,
   ],
   exports: [CalendarComponent],
   providers: [],
