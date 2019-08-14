@@ -184,6 +184,22 @@ export class ExpensesService {
     "08/06/2019": [  
       "$19.62 - Groceries",
     ],
+    "08/08/2019": [  
+      "$7.63 - Groceries",
+    ],
+    "08/09/2019": [  
+      "$27.77 - Groceries",
+      "$10.16 - Detergent",
+    ],
+    "08/10/2019": [  
+      "$19.62 - Groceries",
+    ],
+    "08/11/2019": [  
+      "$12.00 - MeetFresh",
+    ],
+    "08/13/2019": [  
+      "$21.55 - Groceries",
+    ],
   };
 
   getExpenses(date) {

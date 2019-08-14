@@ -19,14 +19,6 @@ export class StockHistoryComponent implements OnInit {
       "result": ""
     },
     {
-      "date": "11/08/2018",
-      "symbol": "HTL",
-      "position": "B",
-      "quantity": "555",
-      "price": "0.91",
-      "result": ""
-    },
-    {
       "date": "13/07/2018",
       "symbol": "ECI",
       "position": "B",
@@ -56,7 +48,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "57",
       "price": "30.87",
-      "result": "-179.99CAD"
+      "result": "-179.99CAD loss"
     },
     {
       "date": "01/08/2018",
@@ -64,7 +56,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "54",
       "price": "28.86",
-      "result": "524.86CAD"
+      "result": "+524.86CAD gain"
     },
     {
       "date": "08/08/2018",
@@ -87,7 +79,7 @@ export class StockHistoryComponent implements OnInit {
       "symbol": "TSGI",
       "position": "B",
       "quantity": "31",
-      "price": "",
+      "price": "47.265",
       "result": ""
     },
     {
@@ -96,7 +88,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "31",
       "price": "41.76",
-      "result": "-170.66CAD"
+      "result": "-170.66CAD loss"
     },
     {
       "date": "13/08/2018",
@@ -104,7 +96,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "B",
       "quantity": "36",
       "price": "36.90",
-      "result": "30.66"
+      "result": ""
     },
     {
       "date": "14/08/2018",
@@ -120,7 +112,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "555",
       "price": "1.08",
-      "result": "+79.90CAD"
+      "result": "+79.90CAD gain"
     },
     {
       "date": "20/08/2018",
@@ -136,7 +128,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "36",
       "price": "31.49",
-      "result": "+9.88CAD"
+      "result": "+9.88CAD gain"
     },
     {
       "date": "27/08/2018",
@@ -144,7 +136,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "28",
       "price": "61.74",
-      "result": "713.32CAD"
+      "result": "+713.32CAD gain"
     },
     {
       "date": "28/08/2018",
@@ -152,7 +144,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "241",
       "price": "8.45",
-      "result": "+421.53CAD"
+      "result": "+421.53CAD gain"
     },
     {
       "date": "10/09/2018",
@@ -168,7 +160,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "150",
       "price": "8.98",
-      "result": "+91.00CAD"
+      "result": "+91.00CAD gain"
     },
     {
       "date": "08/02/2019",
@@ -200,7 +192,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "24",
       "price": "61.27",
-      "result": "+15.04CAD"
+      "result": "+15.04CAD gain"
     },
     {
       "date": "14/02/2019",
@@ -216,7 +208,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "159",
       "price": "9.36",
-      "result": "-21.59CAD"
+      "result": "-21.59CAD loss"
     },
     {
       "date": "15/02/2019",
@@ -232,7 +224,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "6",
       "price": "182.86",
-      "result": "+99.56USD"
+      "result": "+99.56USD gain"
     },
     {
       "date": "25/02/2019",
@@ -240,7 +232,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "300",
       "price": "9.4567",
-      "result": "+6.01CAD"
+      "result": "+6.01CAD gain"
     },
     {
       "date": "06/03/2019",
@@ -268,14 +260,6 @@ export class StockHistoryComponent implements OnInit {
     },
     {
       "date": "20/03/2019",
-      "symbol": "TGOD",
-      "position": "B",
-      "quantity": "90",
-      "price": "5.14",
-      "result": ""
-    },
-    {
-      "date": "20/03/2019",
       "symbol": "TSGI",
       "position": "B",
       "quantity": "20",
@@ -288,7 +272,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "20",
       "price": "22.6628",
-      "result": "+5.46CAD"
+      "result": "+5.46CAD gain"
     },
     {
       "date": "22/03/2019",
@@ -296,7 +280,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "590",
       "price": "4.85",
-      "result": "+118.9CAD"
+      "result": "+108.9CAD gain"
     },
     {
       "date": "22/03/2019",
@@ -304,7 +288,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "1",
       "price": "1 778.82",
-      "result": "+193.03USD"
+      "result": "+193.03USD gain"
     },
     {
       "date": "22/03/2019",
@@ -320,7 +304,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "20",
       "price": "23.5153",
-      "result": "-9.27CAD"
+      "result": "-9.27CAD loss"
     },
     {
       "date": "22/03/2019",
@@ -328,7 +312,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "6",
       "price": "176.79",
-      "result": "-34.00USD"
+      "result": "-34.00USD loss"
     },
     {
       "date": "29/04/2019",
@@ -368,7 +352,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "18",
       "price": "27.0907",
-      "result": "+31.15CAD"
+      "result": "+31.15CAD gain"
     },
     {
       "date": "09/05/2019",
@@ -400,7 +384,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "40",
       "price": "11.7302",
-      "result": "+8.41CAD"
+      "result": "+8.41CAD gain"
     },
     {
       "date": "17/05/2019",
@@ -416,7 +400,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "20",
       "price": "24.3171",
-      "result": "-4.65CAD"
+      "result": "-4.65CAD loss"
     },
     {
       "date": "17/05/2019",
@@ -424,7 +408,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "6",
       "price": "219.61",
-      "result": "-131.88USD"
+      "result": "-131.88USD loss"
     },
     {
       "date": "17/05/2019",
@@ -432,7 +416,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "170",
       "price": "12.05",
-      "result": "+41.20CAD"
+      "result": "+41.20CAD gain"
     },
     {
       "date": "22/05/2019",
@@ -440,7 +424,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "500",
       "price": "4.22",
-      "result": "+20.00CAD"
+      "result": "+20.00CAD gain"
     },
     {
       "date": "23/05/2019",
@@ -472,7 +456,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "43",
       "price": "11.13",
-      "result": "-2.15CAD"
+      "result": "-2.15CAD loss"
     },
     {
       "date": "23/05/2019",
@@ -488,7 +472,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "13",
       "price": "11.24",
-      "result": "+1.56CAD"
+      "result": "+1.56CAD gain"
     },
     {
       "date": "24/05/2019",
@@ -504,7 +488,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "1",
       "price": "369.00",
-      "result": "+3.66CAD"
+      "result": "+3.66CAD gain"
     },
     {
       "date": "24/05/2019",
@@ -512,7 +496,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "200",
       "price": "11.28",
-      "result": "+20.00CAD"
+      "result": "+20.00CAD gain"
     },
     {
       "date": "24/05/2019",
@@ -528,7 +512,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "22",
       "price": "22.56",
-      "result": "-5.06CAD"
+      "result": "-5.06CAD loss"
     },
     {
       "date": "29/05/2019",
@@ -552,7 +536,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "17",
       "price": "150.47",
-      "result": "-234.24USD"
+      "result": "-234.24USD loss"
     },
     {
       "date": "30/05/2019",
@@ -560,7 +544,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "45",
       "price": "10.82",
-      "result": "-7.20CAD"
+      "result": "-7.20CAD loss"
     },
     {
       "date": "30/05/2019",
@@ -568,7 +552,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "965",
       "price": "3.75",
-      "result": "-330.75CAD"
+      "result": "-330.75CAD loss"
     },
     {
       "date": "05/06/2019",
@@ -584,7 +568,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "45",
       "price": "10.36",
-      "result": "+1.35CAD"
+      "result": "+1.35CAD gain"
     },
     {
       "date": "10/06/2019",
@@ -600,7 +584,7 @@ export class StockHistoryComponent implements OnInit {
       "position": "S",
       "quantity": "22",
       "price": "22.38",
-      "result": "-1.54CAD"
+      "result": "-1.54CAD loss"
     },
     {
       "date": "12/06/2019",
@@ -623,16 +607,48 @@ export class StockHistoryComponent implements OnInit {
       "symbol": "ACB",
       "position": "B",
       "quantity": "200",
-      "price": "10.025",
-      "result": ""
+      "price": "10.08",
+      "result": "Currently at a -276CAD loss"
     },
     {
       "date": "20/06/2019",
       "symbol": "TGOD",
       "position": "B",
       "quantity": "500",
-      "price": "3.308",
+      "price": "3.33",
+      "result": "Currently at a +115CAD gain"
+    },
+    {
+      "date": "21/06/2019",
+      "symbol": "WEED",
+      "position": "B",
+      "quantity": "9",
+      "price": "52.98",
       "result": ""
+    },
+    {
+      "date": "18/07/2019",
+      "symbol": "WEED",
+      "position": "B",
+      "quantity": "9",
+      "price": "46.95",
+      "result": "-54.27CAD loss"
+    },
+    {
+      "date": "18/07/2019",
+      "symbol": "TSGI",
+      "position": "B",
+      "quantity": "20",
+      "price": "20.859",
+      "result": "Currently at a -73.98CAD loss"
+    },
+    {
+      "date": "12/08/2019",
+      "symbol": "TSGI",
+      "position": "B",
+      "quantity": "80",
+      "price": "18.65",
+      "result": "Currently at a -119.59CAD loss"
     },
   ]
 
