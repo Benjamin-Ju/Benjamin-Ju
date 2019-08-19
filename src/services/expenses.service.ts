@@ -197,8 +197,15 @@ export class ExpensesService {
     "08/11/2019": [  
       "$12.00 - MeetFresh",
     ],
-    "08/13/2019": [  
+    "08/12/2019": [  
       "$21.55 - Groceries",
+    ],
+    "08/14/2019": [  
+      "$21.63 - Groceries",
+    ],
+    "08/16/2019": [  
+      "$24.52 - Groceries",
+      "$71.18 - Protein Powder",
     ],
   };
 
