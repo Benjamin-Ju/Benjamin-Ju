@@ -17,7 +17,7 @@ export class ExpensesService {
       "$29.37 - Gym"
     ],
     "05/02/2019": [
-      "$50.00 - Gym"
+      "$50.00 - Bus Card"
     ],
     "05/03/2019": [
       "$41.62 - Groceries"
@@ -34,7 +34,7 @@ export class ExpensesService {
       "$10.00 - Lazeez"
     ],
     "05/11/2019": [
-      "$9.00 - Tim Horton's"
+      "$9.00 - Tim Hortons"
     ],
     "05/12/2019": [
       "$21.56 - Groceries"
@@ -47,7 +47,7 @@ export class ExpensesService {
     ],
     "05/17/2019": [
       "$110.80 - Skin Care",
-      "$29.37 - Gym Membership"
+      "$29.37 - Gym"
     ],
     "05/19/2019": [
       "$20.62 - Groceries"
@@ -206,6 +206,10 @@ export class ExpensesService {
     "08/16/2019": [  
       "$24.52 - Groceries",
       "$71.18 - Protein Powder",
+      "$7.50 - Lunch"
+    ],
+    "08/18/2019": [  
+      "$55.00 - Gym",
     ],
   };
 
