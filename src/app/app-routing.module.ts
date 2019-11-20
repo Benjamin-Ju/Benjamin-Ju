@@ -9,6 +9,7 @@ import { BlogComponent } from './blog/blog.component';
 import { StockHistoryComponent } from './stock-history/stock-history.component';
 import { SchedulesComponent } from './schedules/schedules.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { LeetcodeComponent } from './leetcode/leetcode.component';
 
 const routes: Routes = [
   { path: '', component: PortfolioComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'personal/blog', component: BlogComponent },
   { path: 'personal/stockhistory', component: StockHistoryComponent },
   { path: 'personal/schedules', component: SchedulesComponent },
+  { path: 'personal/leetcode', component: LeetcodeComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

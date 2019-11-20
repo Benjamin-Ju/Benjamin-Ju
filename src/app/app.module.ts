@@ -26,6 +26,7 @@ import { SchedulesComponent } from './schedules/schedules.component';
 import { CodingChallengesComponent } from './coding-challenges/coding-challenges.component';
 import { PersonalComponent } from './personal/personal.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { LeetcodeComponent } from './leetcode/leetcode.component';
 
 declare var require: any;
 
@@ -42,7 +43,8 @@ declare var require: any;
     SchedulesComponent,
     CodingChallengesComponent,
     PersonalComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    LeetcodeComponent
   ],
   imports: [
     BrowserModule,
