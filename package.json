@@ -30,7 +30,7 @@
     "fstream": "^1.0.12",
     "handlebars": "^4.7.6",
     "https-proxy-agent": "^5.0.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "kind-of": "^6.0.3",
     "lodash": "^4.17.15",
     "lodash.mergewith": "^4.6.2",
